@@ -7,7 +7,7 @@ class Search
       result = find_it_binary_search(guess, the_array)
       [message, result].flatten
     else
-      message = 'please provide a number to search for and array'
+      'please provide a number to search for and array'
     end
   end
 
