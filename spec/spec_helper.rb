@@ -1,4 +1,9 @@
-require_relative '../app/lib/search'
+dirs = [
+  './app/lib/*.rb',
+  './app/lib/graphs/*.rb'
+]
+dirs.each{|dir| Dir[dir].each {|file| require file }}
+
 
 RSpec.configure do |config|
   config.filter_run :focus
