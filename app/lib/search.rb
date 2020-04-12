@@ -32,7 +32,7 @@ class Search
     the_middle_index = middle_index(lowest_index, highest_index)
 
     while the_array[lowest_index] < the_array[highest_index] do
-      step_counter += step_counter
+      step_counter += 1
 
       if guess < the_array[the_middle_index]
         highest_index = the_middle_index - 1

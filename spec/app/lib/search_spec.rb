@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 RSpec.describe Search do
   describe '.find' do
     context 'with guess' do
