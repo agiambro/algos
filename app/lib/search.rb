@@ -49,7 +49,7 @@ class Search
 
   def self.has_duplicates? arr
     existing = []
-    arr.each_with_index.each do |val, idx|
+    arr.each do |val|
       return true if existing[val] == 1
       existing[val] = 1
     end
