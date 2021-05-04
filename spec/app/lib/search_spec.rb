@@ -81,4 +81,16 @@ RSpec.describe Search do
       expect(results_linear[1]).to be > results_binary[1]
     end
   end
+
+  describe '.has_duplicates?' do
+    it 'returns true if duplicate value found' do
+      the_array = [2, 3, 5, 8, 2, 9]
+      expect(Search.has_duplicates? the_array).to eq true
+    end
+
+    it 'returns false if no duplicate value found' do
+      the_array = [2, 3, 5, 8, 7, 9]
+      expect(Search.has_duplicates? the_array).to eq false
+    end
+  end
 end
