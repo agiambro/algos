@@ -38,7 +38,7 @@ describe GameBoard do
                                  7, 0, 0, 0, 0, 0, 0, 0, 8,
                                  0, 0, 4, 0, 0, 0, 1, 0, 0,
                                  0, 0, 3, 6, 9, 7, 5, 0, 0
-    expect(@board.next_moves).to eq [@next_move_1, @next_move_2, @next_move_3]
+    expect(@board.next_moves).to eq [@next_move_1.layout, @next_move_2.layout, @next_move_3.layout]
   end
 
 
